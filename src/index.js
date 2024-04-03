@@ -6,12 +6,14 @@ class A extends Component {
 
   constructor(){
     super();
+    //state is a javascript obj which can hold some data
     this.state={name:'ravindra',surname:'jadeja',address:'kerala'} //state initialization
   }
   render() {
+    //updating the existing state
     this.setState(
       {
-        ...this.state, //this ... is spread operator
+        ...this.state, //this ... is spread operator introduced in ES6
         name:'msd'
       }
     );
